@@ -15,8 +15,7 @@
             </el-form>
         </div>
         <div class="login-footer">
-            <!-- <el-button type="primary">以访客身份登录</el-button> -->
-            <el-button type="primary">登录</el-button>
+            <el-button @click="login" type="primary">登录</el-button>
         </div>
     </div>
   </div>
@@ -50,7 +49,9 @@ export default {
 
   },
   methods: {
-
+    login() {
+        console.log(`login method called`);
+    }
   }
 }
 </script>
